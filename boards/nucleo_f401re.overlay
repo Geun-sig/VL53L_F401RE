@@ -1,0 +1,15 @@
+/*
+ * Copyright 2025 NXP
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+ /* Device Tree overlay for NUCLEO-F401RE + X-NUCLEO-50L0A1 (VL53L0X) */
+ &i2c1 {
+     status = "okay";
+     vl53l0x@29 {
+         compatible = "st,vl53l0x";
+         reg = <0x29>;
+         label = "VL53L0X";
+     };
+ };

@@ -1,0 +1,5 @@
+west:
+  command: C:\Users\user\AppData\Local\Programs\Python\Python313\Scripts\west build
+    -b nrf52dk/nrf52832 --pristine=always
+  topdir: C:\zp
+  version: 1.4.0

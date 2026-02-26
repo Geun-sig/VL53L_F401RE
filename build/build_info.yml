@@ -1,0 +1,62 @@
+cmake:
+  application:
+    configuration-dir: 'C:/stwork/vl53'
+    source-dir: 'C:/stwork/vl53'
+  board:
+    name: 'nrf52dk'
+    path:
+     - 'C:/zp/zephyr/boards/nordic/nrf52dk'
+    qualifiers: 'nrf52832'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - 'C:/zp/zephyr/dts/bindings'
+    files:
+     - 'C:/zp/zephyr/boards/nordic/nrf52dk/nrf52dk_nrf52832.dts'
+     - 'C:/zp/zephyr/boards/shields/x_nucleo_53l0a1/x_nucleo_53l0a1.overlay'
+    include-dirs:
+     - 'C:/zp/modules/hal/ambiq/dts'
+     - 'C:/zp/modules/hal/atmel/include'
+     - 'C:/zp/modules/hal/bouffalolab/include'
+     - 'C:/zp/modules/hal/bouffalolab/include/zephyr'
+     - 'C:/zp/modules/hal/gigadevice/include'
+     - 'C:/zp/modules/hal/microchip/include'
+     - 'C:/zp/modules/hal/microchip/dts'
+     - 'C:/zp/modules/hal/nuvoton/dts'
+     - 'C:/zp/modules/hal/nxp/dts'
+     - 'C:/zp/modules/hal/stm32/dts'
+     - 'C:/zp/modules/hal/ti/dts'
+     - 'C:/zp/zephyr/include'
+     - 'C:/zp/zephyr/include/zephyr'
+     - 'C:/zp/zephyr/dts/common'
+     - 'C:/zp/zephyr/dts/vendor'
+     - 'C:/zp/zephyr/dts/rx'
+     - 'C:/zp/zephyr/dts/x86'
+     - 'C:/zp/zephyr/dts/xtensa'
+     - 'C:/zp/zephyr/dts/sparc'
+     - 'C:/zp/zephyr/dts/riscv'
+     - 'C:/zp/zephyr/dts/posix'
+     - 'C:/zp/zephyr/dts/arm64'
+     - 'C:/zp/zephyr/dts/arm'
+     - 'C:/zp/zephyr/dts/arc'
+     - 'C:/zp/zephyr/dts'
+  kconfig:
+    files:
+     - 'C:/zp/zephyr/boards/nordic/nrf52dk/nrf52dk_nrf52832_defconfig'
+     - 'C:/stwork/vl53/prj.conf'
+    user-files:
+     - 'C:/stwork/vl53/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: 'C:/zephyr-sdk-0.17.3'
+  vendor-specific:
+    nordic:
+      svdfile: 'C:/zp/modules/hal/nordic/nrfx/mdk/nrf52.svd'
+  zephyr:
+    version: '4.2.99'
+    zephyr-base: 'C:/zp/zephyr'
+version: '0.1.0'
+west:
+  command: 'C:\Users\user\AppData\Local\Programs\Python\Python313\Scripts\west build -b nrf52dk/nrf52832 --pristine=always'
+  topdir: 'C:\zp'
+  version: '1.4.0'
